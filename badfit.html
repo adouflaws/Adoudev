@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Badifit — Salle de Sport Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="badfit.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6.5 6.5h11M6.5 17.5h11M3 10h3v4H3zM18 10h3v4h-3zM6.5 12h11"/>
+          </svg>
+        </span>
+        <span class="logo-text">Badifit</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#programmes">Programmes</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#coaches">Coaches</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#contact" class="nav-cta">Essai gratuit</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-split container">
+      <div class="hero-content">
+        <span class="hero-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Salle de sport premium · Paris
+        </span>
+        <h1 class="hero-title">
+          Forge ton corps,<br />
+          <span class="gradient-text">dépasse tes limites.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Badifit, c'est une communauté, des coachs d'élite et des équipements
+          dernière génération pour atteindre chaque objectif que tu t'es fixé.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            <span>Commencer maintenant</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#tarifs" class="btn-ghost">Voir les tarifs</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-value">+1 200</span>
+            <span class="stat-label">Membres actifs</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-value">15</span>
+            <span class="stat-label">Coachs certifiés</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <span class="stat-value">7j/7</span>
+            <span class="stat-label">Ouvert non-stop</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=85&auto=format&fit=crop"
+            alt="Salle de sport Badifit"
+            loading="eager"
+          />
+          <div class="hero-img-overlay"></div>
+          <div class="hero-img-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>Équipements premium</span>
+          </div>
+        </div>
+        <div class="hero-float-card">
+          <span class="float-icon">🔥</span>
+          <div>
+            <strong>+340 séances</strong>
+            <span>cette semaine</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMMES ===== -->
+  <section id="programmes">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">Nos programmes</span>
+        <h2>Entraîne-toi comme un <span class="gradient-text">champion</span></h2>
+        <p>Trois disciplines, une passion : te surpasser. Chaque programme est conçu pour des résultats concrets.</p>
+      </div>
+      <div class="programmes-grid">
+
+        <div class="programme-card animate-up">
+          <div class="programme-img">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=80&auto=format&fit=crop" alt="Musculation" loading="lazy" />
+            <div class="programme-img-overlay"></div>
+            <div class="programme-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6.5 6.5h11M6.5 17.5h11M3 10h3v4H3zM18 10h3v4h-3zM6.5 12h11"/>
+              </svg>
+            </div>
+          </div>
+          <div class="programme-body">
+            <h3>Musculation</h3>
+            <p>Développe ta force et ta masse musculaire avec un parc machine complet et un espace de libre pratique guidé par nos coachs.</p>
+            <ul class="programme-features">
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>+80 machines et équipements</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Espace haltères & barres libres</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Plans d'entraînement personnalisés</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Suivi de progression digital</li>
+            </ul>
+            <a href="#contact" class="programme-link">Rejoindre ce programme →</a>
+          </div>
+        </div>
+
+        <div class="programme-card programme-card--featured animate-up">
+          <div class="programme-img">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80&auto=format&fit=crop" alt="CrossFit" loading="lazy" />
+            <div class="programme-img-overlay"></div>
+            <div class="programme-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <span class="featured-badge">⚡ Le plus populaire</span>
+          </div>
+          <div class="programme-body">
+            <h3>CrossFit & Functional</h3>
+            <p>Le programme phare de Badifit. Des WOD intenses, des coachs certifiés Level 2 et une communauté qui te pousse à te dépasser chaque jour.</p>
+            <ul class="programme-features">
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Coachs certifiés CrossFit Level 2</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>WOD quotidiens programmés</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Box équipée (barres, kettlebells, rings)</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Compétitions internes mensuelles</li>
+            </ul>
+            <a href="#contact" class="programme-link">Rejoindre ce programme →</a>
+          </div>
+        </div>
+
+        <div class="programme-card animate-up">
+          <div class="programme-img">
+            <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=600&q=80&auto=format&fit=crop" alt="Cardio HIIT" loading="lazy" />
+            <div class="programme-img-overlay"></div>
+            <div class="programme-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="programme-body">
+            <h3>Cardio & HIIT</h3>
+            <p>Brûle les graisses, améliore ton endurance. Tapis, vélos, rameurs et cours collectifs HIIT pour un cardio explosif et efficace.</p>
+            <ul class="programme-features">
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>40+ machines cardio connectées</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Cours collectifs HIIT & spinning</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Suivi fréquence cardiaque en direct</li>
+              <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Séances de récupération active</li>
+            </ul>
+            <a href="#contact" class="programme-link">Rejoindre ce programme →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TARIFS ===== -->
+  <section id="tarifs">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">Nos abonnements</span>
+        <h2>Un tarif pour <span class="gradient-text">chaque ambition</span></h2>
+        <p>Sans engagement, sans mauvaise surprise. Choisis l'offre qui correspond à tes objectifs.</p>
+      </div>
+      <div class="tarifs-grid">
+
+        <div class="tarif-card animate-up">
+          <div class="tarif-header">
+            <h3>Starter</h3>
+            <p class="tarif-desc">Pour débuter à ton rythme</p>
+          </div>
+          <div class="tarif-price">
+            <span class="price-amount">29€</span>
+            <span class="price-period">/mois</span>
+          </div>
+          <ul class="tarif-features">
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Accès libre salle (6h–22h)</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Vestiaires & casiers</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Bilan de forme à l'entrée</li>
+            <li class="excluded"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Cours collectifs</li>
+            <li class="excluded"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Coaching personnalisé</li>
+          </ul>
+          <a href="#contact" class="btn-tarif">Choisir Starter</a>
+        </div>
+
+        <div class="tarif-card tarif-card--featured animate-up">
+          <span class="featured-badge-top">Populaire</span>
+          <div class="tarif-header">
+            <h3>Pro</h3>
+            <p class="tarif-desc">Le meilleur rapport qualité/résultats</p>
+          </div>
+          <div class="tarif-price">
+            <span class="price-amount">49€</span>
+            <span class="price-period">/mois</span>
+          </div>
+          <ul class="tarif-features">
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Accès libre salle (6h–22h)</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Vestiaires & casiers</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Tous les cours collectifs inclus</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Bilan coach mensuel</li>
+            <li class="excluded"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg>Coaching perso & nutrition</li>
+          </ul>
+          <a href="#contact" class="btn-tarif btn-tarif--featured">Choisir Pro</a>
+        </div>
+
+        <div class="tarif-card animate-up">
+          <div class="tarif-header">
+            <h3>Elite</h3>
+            <p class="tarif-desc">Pour atteindre l'excellence</p>
+          </div>
+          <div class="tarif-price">
+            <span class="price-amount">79€</span>
+            <span class="price-period">/mois</span>
+          </div>
+          <ul class="tarif-features">
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Accès illimité 24h/24</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Tous les cours collectifs inclus</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>4 séances coaching perso/mois</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Plan nutritionnel personnalisé</li>
+            <li class="included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Accès zone VIP & sauna</li>
+          </ul>
+          <a href="#contact" class="btn-tarif">Choisir Elite</a>
+        </div>
+
+      </div>
+      <p class="tarifs-note animate-up">Tous les abonnements sont sans engagement. 1 séance d'essai gratuite offerte.</p>
+    </div>
+  </section>
+
+  <!-- ===== COACHES ===== -->
+  <section id="coaches">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">L'équipe</span>
+        <h2>Tes <span class="gradient-text">coachs d'élite</span></h2>
+        <p>Certifiés, passionnés et déterminés à te faire progresser. Nos coachs sont là pour toi à chaque étape.</p>
+      </div>
+      <div class="coaches-grid">
+
+        <div class="coach-card animate-up">
+          <div class="coach-photo">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80&auto=format&fit=crop&crop=faces,top" alt="Karim Mansouri" loading="lazy" />
+            <div class="coach-photo-overlay"></div>
+          </div>
+          <div class="coach-info">
+            <h3>Karim Mansouri</h3>
+            <p class="coach-specialty">Musculation & Force</p>
+            <p class="coach-exp">8 ans d'expérience</p>
+            <div class="coach-badges">
+              <span class="badge">BPJEPS</span>
+              <span class="badge">Powerlifting</span>
+              <span class="badge">Nutrition</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="coach-card animate-up">
+          <div class="coach-photo">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500&q=80&auto=format&fit=crop&crop=faces,top" alt="Sofia Benali" loading="lazy" />
+            <div class="coach-photo-overlay"></div>
+          </div>
+          <div class="coach-info">
+            <h3>Sofia Benali</h3>
+            <p class="coach-specialty">CrossFit & Functional</p>
+            <p class="coach-exp">6 ans d'expérience</p>
+            <div class="coach-badges">
+              <span class="badge">CF Level 2</span>
+              <span class="badge">Olympic WL</span>
+              <span class="badge">Mobilité</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="coach-card animate-up">
+          <div class="coach-photo">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=500&q=80&auto=format&fit=crop&crop=faces,top" alt="Thomas Renaud" loading="lazy" />
+            <div class="coach-photo-overlay"></div>
+          </div>
+          <div class="coach-info">
+            <h3>Thomas Renaud</h3>
+            <p class="coach-specialty">Cardio & HIIT</p>
+            <p class="coach-exp">5 ans d'expérience</p>
+            <div class="coach-badges">
+              <span class="badge">BPJEPS</span>
+              <span class="badge">Running</span>
+              <span class="badge">Stretching</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section id="galerie">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">Galerie</span>
+        <h2>L'univers <span class="gradient-text">Badifit</span></h2>
+        <p>Des équipements top, une ambiance unique. Découvre l'espace qui va te transformer.</p>
+      </div>
+      <div class="gallery-grid animate-up">
+        <div class="gallery-item gallery-item--tall">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=700&q=80&auto=format&fit=crop" alt="Salle de sport" loading="lazy" />
+          <div class="gallery-overlay"><span>La salle</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80&auto=format&fit=crop" alt="Entraînement" loading="lazy" />
+          <div class="gallery-overlay"><span>Entraînement</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80&auto=format&fit=crop" alt="Coaching" loading="lazy" />
+          <div class="gallery-overlay"><span>Coaching</span></div>
+        </div>
+        <div class="gallery-item gallery-item--wide">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80&auto=format&fit=crop" alt="Équipements" loading="lazy" />
+          <div class="gallery-overlay"><span>Équipements</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80&auto=format&fit=crop" alt="Stretching" loading="lazy" />
+          <div class="gallery-overlay"><span>Récupération</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TÉMOIGNAGES ===== -->
+  <section id="temoignages">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">Témoignages</span>
+        <h2>Ils ont <span class="gradient-text">transformé leur vie</span></h2>
+        <p>Les résultats parlent d'eux-mêmes. Voici ce que disent nos membres.</p>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card animate-up">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Badifit a complètement changé ma façon de m'entraîner. Les coachs sont incroyables, l'ambiance est motivante et les équipements sont top. En 6 mois, j'ai atteint des objectifs que je pensais impossibles."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80&auto=format&fit=crop&crop=faces" alt="Marie Laurent" class="testimonial-avatar" loading="lazy" />
+            <div>
+              <strong>Marie Laurent</strong>
+              <span>Membre Pro depuis 1 an</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card animate-up">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Le programme CrossFit de Badifit est d'un niveau exceptionnel. Sofia est une coach brillante, les WOD sont bien programmés et la communauté est vraiment soudée. Je recommande sans hésiter !"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&auto=format&fit=crop&crop=faces" alt="Alexandre Cros" class="testimonial-avatar" loading="lazy" />
+            <div>
+              <strong>Alexandre Cros</strong>
+              <span>Membre Elite depuis 2 ans</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card animate-up">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "J'ai perdu 12 kg en 5 mois grâce au suivi nutritionnel et aux cours HIIT. L'équipe est à l'écoute, disponible, et les résultats sont là. Badifit, c'est vraiment une famille !"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&q=80&auto=format&fit=crop&crop=faces" alt="Nadia Ferhat" class="testimonial-avatar" loading="lazy" />
+            <div>
+              <strong>Nadia Ferhat</strong>
+              <span>Membre Elite depuis 8 mois</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info animate-up">
+          <span class="section-tag">Contact</span>
+          <h2>Prêt à <span class="gradient-text">commencer ?</span></h2>
+          <p>Réserve ta séance d'essai gratuite ou pose-nous toutes tes questions. Notre équipe te répond rapidement.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Adresse</strong>
+                <span>14 Rue de la Force, 75011 Paris</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+              </div>
+              <div>
+                <strong>Téléphone</strong>
+                <span>+33 1 42 00 00 00</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <strong>Horaires</strong>
+                <span>Lun–Ven : 6h – 22h</span>
+                <span>Sam–Dim : 8h – 20h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap animate-up">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Ton prénom" required />
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Ton nom" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ton@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="programme">Programme souhaité</label>
+              <select id="programme" name="programme">
+                <option value="">Sélectionne un programme</option>
+                <option value="musculation">Musculation</option>
+                <option value="crossfit">CrossFit & Functional</option>
+                <option value="cardio">Cardio & HIIT</option>
+                <option value="essai">Séance d'essai gratuite</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Dis-nous en plus sur tes objectifs…"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span>Envoyer ma demande</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess" hidden>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Message envoyé ! On te contacte très vite.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6.5 6.5h11M6.5 17.5h11M3 10h3v4H3zM18 10h3v4h-3zM6.5 12h11"/>
+              </svg>
+            </span>
+            <span class="logo-text">Badifit</span>
+          </a>
+          <p>Forge-toi. Dépasse-toi. <span class="gradient-text">Badifit.</span></p>
+        </div>
+        <nav class="footer-links">
+          <a href="#programmes">Programmes</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#coaches">Coaches</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2026 Badifit. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="badfit.js"></script>
+</body>
+</html>
