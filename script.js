@@ -1,5 +1,5 @@
 /* =============================================
-   ADOUDEV — script.js
+   STONEDEV — script.js
    ============================================= */
 
 /* ---- Navbar sticky ---- */
@@ -54,32 +54,6 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.skill-item[data-pct]').forEach(el => skillObserver.observe(el));
 
-/* ---- Compteur animé des stats ---- */
-function animateCounters() {
-  document.querySelectorAll('.stat-number').forEach(counter => {
-    const text  = counter.textContent;
-    const match = text.match(/(\d+)/);
-    if (!match) return;
-    const target = parseInt(match[1]);
-    const suffix = text.replace(match[1], '');
-    let current  = 0;
-    const step   = Math.ceil(target / (1500 / 16));
-    const timer  = setInterval(() => {
-      current += step;
-      if (current >= target) { current = target; clearInterval(timer); }
-      counter.textContent = current + suffix;
-    }, 16);
-  });
-}
-
-const statsSection = document.querySelector('.hero-stats');
-if (statsSection) {
-  new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) { animateCounters(); }
-    });
-  }, { threshold: 0.5 }).observe(statsSection);
-}
 
 /* ---- Nav active au scroll ---- */
 const sections = document.querySelectorAll('section[id]');
@@ -116,6 +90,18 @@ document.querySelectorAll('.service-card, .bento-card, .testimonial-card, .cta-c
     const rect = card.getBoundingClientRect();
     card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
     card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+  });
+});
+
+/* ---- Carte bento-large entièrement cliquable ---- */
+document.querySelectorAll('.bento-large').forEach(card => {
+  const link = card.querySelector('.bento-link');
+  if (!link) return;
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', (e) => {
+    if (!e.target.closest('a')) {
+      window.open(link.href, link.target || '_blank');
+    }
   });
 });
 

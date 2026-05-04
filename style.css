@@ -318,13 +318,13 @@ img { max-width: 100%; display: block; }
 
 .hero-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1fr;
   align-items: center;
   width: 100%;
+  text-align: center;
 }
 
-.hero-content { max-width: 600px; }
+.hero-content { max-width: 800px; margin: 0 auto; }
 
 /* Titre géant */
 .hero-title {
@@ -342,7 +342,7 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
   max-width: 480px;
   line-height: 1.8;
-  margin-bottom: 28px;
+  margin: 0 auto 28px;
 }
 
 .hero-email {
@@ -357,27 +357,6 @@ img { max-width: 100%; display: block; }
 }
 .hero-email:hover { color: var(--accent); border-color: var(--accent); }
 
-/* Stats */
-.hero-stats {
-  display: flex;
-  gap: 48px;
-  flex-wrap: wrap;
-  padding-top: 40px;
-  border-top: 1px solid var(--border);
-}
-.stat-number {
-  display: block;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-.stat-label {
-  display: block;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin-top: 2px;
-}
 
 /* Photo dans cadre crème */
 .hero-photo {
