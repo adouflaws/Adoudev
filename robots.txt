@@ -26,4 +26,4 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-Sitemap: https://stonedev-portfolio.netlify.app/sitemap.xml
+Sitemap: https://stonedev-mali.netlify.app/sitemap.xml

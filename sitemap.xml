@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stonedev-portfolio.netlify.app/</loc>
+    <loc>https://stonedev-mali.netlify.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://stonedev-portfolio.netlify.app/badfit.html</loc>
+    <loc>https://stonedev-mali.netlify.app/badfit.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
