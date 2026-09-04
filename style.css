@@ -56,6 +56,12 @@ h1,h2,h3,h4 {
 }
 
 a { text-decoration: none; color: inherit; }
+.acc-content p a, #cta p a, .contact-info p a, .case-text p a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.acc-content p a:hover, #cta p a:hover, .contact-info p a:hover, .case-text p a:hover { color: var(--ink); }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; }
@@ -247,6 +253,16 @@ section { padding: var(--space-section) 0; position: relative; }
   letter-spacing: -0.01em; color: var(--ink);
   opacity: 0;
   filter: blur(8px);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .hero-name {
@@ -638,7 +654,7 @@ footer { padding: 40px 0; border-top: 1px solid var(--line-on-light); }
 .breadcrumb a:hover { color: var(--ink); }
 .breadcrumb span[aria-hidden] { opacity: 0.5; }
 
-.article-hero { padding-top: clamp(1rem, 3vw, 2rem); padding-bottom: 0; }
+.article-hero { padding-top: clamp(96px, 15vh, 140px); padding-bottom: 0; }
 .article-hero h1 {
   font-size: clamp(2.1rem, 5.5vw, 3.6rem);
   line-height: 1.08; letter-spacing: -0.02em;
@@ -696,6 +712,17 @@ footer { padding: 40px 0; border-top: 1px solid var(--line-on-light); }
 .article-cta p { color: var(--muted-on-dark); margin: 0; }
 .article-cta .btn-dark { background: var(--paper); color: var(--ink); }
 .article-cta .btn-dark:hover { background: var(--paper-2); }
+
+.author-bio {
+  display: flex; gap: 16px; align-items: flex-start;
+  margin-top: 2.8em; padding-top: 1.8em; border-top: 1px solid var(--line-on-light);
+}
+.author-bio img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.author-bio strong { display: block; font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 4px; }
+.author-bio p { margin: 0 0 8px; color: var(--muted-on-light); font-size: 0.88rem; line-height: 1.55; }
+.author-links { display: flex; gap: 14px; }
+.author-links a { font-size: 0.82rem; color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.author-links a:hover { color: var(--ink); }
 
 .article-faq { margin-top: 2.5em; }
 .article-faq-item { padding: 18px 0; border-top: 1px solid var(--line-on-light); }
