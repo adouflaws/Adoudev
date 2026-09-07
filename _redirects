@@ -1,0 +1,16 @@
+# Force les URLs canoniques en .html — élimine les doublons créés par
+# le post-processing "Pretty URLs" de Netlify (chaque page était servie
+# en 200 à la fois en /page.html ET /page, sans redirection).
+# Corrige le motif GSC "Autre page avec balise canonique correcte".
+
+/creation-site-web-mali                               /creation-site-web-mali.html                               301!
+/seo-mali                                             /seo-mali.html                                             301!
+/developpeur-web-freelance-mali                       /developpeur-web-freelance-mali.html                       301!
+/agence-web-bamako                                    /agence-web-bamako.html                                    301!
+/meilleur-developpeur-web-mali-2026                   /meilleur-developpeur-web-mali-2026.html                   301!
+/a-propos                                             /a-propos.html                                             301!
+/badfit                                               /badfit.html                                               301!
+/blog/combien-coute-un-site-web-au-mali               /blog/combien-coute-un-site-web-au-mali.html               301!
+/blog/seo-mali-comment-apparaitre-sur-google-en-2026  /blog/seo-mali-comment-apparaitre-sur-google-en-2026.html  301!
+/blog/quest-ce-que-le-geo-etre-visible-sur-chatgpt    /blog/quest-ce-que-le-geo-etre-visible-sur-chatgpt.html    301!
+/blog/application-mobile-vs-site-web-mali             /blog/application-mobile-vs-site-web-mali.html             301!
